@@ -1,0 +1,50 @@
+O código foi escrito na linguagem de programação Python, e compilado em sua versão 3.7.9+
+
+Para a compilação do programa é necessária a instalação de 3 bibliotecas (além do próprio Python na versão correta):
+- numpy
+- matplotlib
+- sys
+
+Para a instalação delas, pode-se rodar o comando pelo prompt de comando do computador: 
+pip -install matplotlib
+pip -install syspath
+(ao baixar a biblioteca matplotlib, a biblioteca numpy será baixada junto automaticamente).
+
+Para a compilação do código, deve-se escrever "python ep2.py" no console que  
+refere-se ao diretório onde o arquivo encontra-se armazenado.
+
+Além disso, é necessario colocar os 3 arquivos ("input-a", "input-b" e "input-c") no mesmo diretório que encontra-se
+o arquivo "ep2.py".
+
+TUTORIAL PARA O USO DO PROGRAMA:
+	Ao iniciar o programa, o usuário irá deparar-se com a interface inicial, onde haverá um cabeçalho e,
+a seguinte, um menu para selecionar qual operação será realizada.
+	Dando como entrada '1', será realizado a Transformação de Householder e o algoritmo QR na qual o utilizador fornecerá uma matriz.
+	Dando como entrada '2', será realizado a resolução de um sistema de treliças planas.
+
+Transformação de Householder:
+	O usuário deverá fornecer as seguintes entradas:
+		O usuário deverá fornecer as seguintes entradas:
+		- O programa mostrará duas opções para a entrada da matriz
+			- Digitando '1', o usuário digitará o tamanho da matriz e suas componentes termo a termo.
+			- Digitando '2', será carregado um dos inputs a ou b.
+				- Digitando '1', será utilizado o arquivo "input-a"
+				- Digitando '2', será utilizado o arquivo "input-b"
+	Como saídas, o programa retornará:
+		- Matriz utilizada para os cálculos
+		- Matriz tridiagonal simétrica obtido por Householder
+		- Matriz H transposta obtida por Householder
+		- Matriz de autovetores calculados com deslocamento espectral
+		- Vetor de autovalores calculados com deslocamento espectral
+		- Matriz de autovetores ortogonais de A
+		- Forma diagonal semelhante
+		- Comparações dos autovalores teóricos e aqueles obtidos pelo programa
+		- Comparações entre A*v e lambda*v
+		- Matriz resultante de V*Vt e resposta se V é ortogonal
+
+Resolução sistema de treliças-planas:
+	O programa executará sozinho e o usuário deve apenas esperar, pois, como entrada será utilizado, automaticamente o arquivo
+"input-c".
+	Como saída, o programa mostrará as cinco menores frequências e a matriz dos modos de vibração.
+		
+			 

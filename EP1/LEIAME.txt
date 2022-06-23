@@ -1,0 +1,55 @@
+O código foi escrito na linguagem de programação Python, e compilado em sua versão 3.7.9+
+
+Para a compilação do programa é necessária a instalação de 3 bibliotecas (além do próprio Python na versão correta):
+- numpy
+- matplotlib
+- sys
+
+Para a instalação delas, pode-se rodar o comando pelo prompt de comando do computador: 
+pip -install matplotlib
+pip -install syspath
+(ao baixar a biblioteca matplotlib, a biblioteca numpy será baixada junto automaticamente).
+
+Para a compilação do código, deve-se escrever "python ep.py" no console que  
+refere-se ao diretório onde o arquivo encontra-se armazenado.
+
+TUTORIAL PARA O USO DO PROGRAMA:
+	Ao iniciar o programa, o usuário irá deparar-se com a interface inicial, onde haverá um cabeçalho e,
+a seguinte, um menu para selecionar qual operação será realizada.
+	Dando como entrada '1', será realizado o algoritmo QR na qual o utilizador fornecerá uma matriz tridiagonal
+simétrica.
+	Dando como entrada '2', será realizado a resolução de um sistema massa-mola.
+
+Algoritmo QR:
+	O usuário deverá fornecer as seguintes entradas:
+		- Tamanho da matriz (nxn): n = inteiro
+		- O programa perguntará se todos alphas são iguais, assim como betas/gamas:
+			- Ao digitar "s", ele irá pedir, em seguida, o valor do alpha e beta/gama
+			- Ao digitar "n", ele irá pedir, em seguida, cada valor de alpha e beta/gama
+		- Erro: 10^-(input)
+	Como saídas, o programa retornará:
+		- Matriz de autovetores calculados sem deslocamento espectral
+		- Vetor de autovalores calculados sem deslocamento espectral
+		- Matriz de autovetores calculados com deslocamento espectral
+		- Vetor de autovalores calculados com deslocamento espectral
+		- Matriz de autovetores teóricos
+		- Vetor de autovalores teóricos
+
+Resolução sistema massa-mola:
+	O usuário deverá fornecer as seguintes entradas:
+		- O programa mostrará duas opções para o número de massas (5 ou 10)
+			- Digitando '1', será utilizado 5 massas
+			- Digitando '1', será utilizado 10 massas
+		- Massa de cada objeto preso a mola em quilogramas
+		- Valor do erro a ser utilizado para os cálculos do algoritmo QR que será utilizado na operação
+		- O programa mostrará duas opções para o cálculo da constante elástica (40 + 2i ou 40 + 2*(-1^i))
+			- Digitando '1', o k será definido por 40 + 2i
+			- Digitando '2', o k será definido por 40 + 2*(-1^i)
+		- O programa perguntará você deseja digitar as posições iniciais:
+			- Ao digitar "s", ele irá pedir, em seguida, o valor de cada posição
+			- Ao digitar "n", ele irá utilizar algum autovetor como posição inicial
+		- Tempo da simulação do sistema em segundos
+	Como saída, o programa abrirá duas abas que mostraram os gráficos da posição das massas (x(t)) em função do tempo,
+porém, um deles mostrará as curvas de todas massas juntas e a outra mostrará elas individualmente.
+		
+			 
